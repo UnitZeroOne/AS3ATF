@@ -1,4 +1,4 @@
 AS3ATF
 ======
 
-ActionScript Library to read, write and inspect Adobe's Texture Format.
+ActionScript 3 Library to read, write and inspect Adobe Texture Format (ATF).
