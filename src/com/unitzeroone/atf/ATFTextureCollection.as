@@ -13,7 +13,7 @@ package com.unitzeroone.atf
 		{
 			var atfCountSerializer:ATFCountSerializer = new ATFCountSerializer();
 			for(var j:int = 0; j<textures.length; j++)
-				textures[j].readOrWrite(atfCountSerializer);
+				textures[j].serializeWith(atfCountSerializer);
 			
 			return atfCountSerializer.count;
 		}
@@ -47,11 +47,11 @@ package com.unitzeroone.atf
 			}
 		}
 		
-		internal function readOrWrite(serializer:IATFSerializer):void
+		internal function serializeWith(serializer:IATFSerializer):void
 		{
 			var l:int = textures.length;
 			for(var j:int=0; j<l; j++)
-				textures[j].readOrWrite(serializer);
+				textures[j].serializeWith(serializer);
 		}
 		
 		public function textureAtIndexAtFace(index:int, face:int):ATFTextureBase

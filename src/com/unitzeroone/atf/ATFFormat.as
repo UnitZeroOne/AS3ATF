@@ -18,10 +18,10 @@ package com.unitzeroone.atf
 		public static const RAW_NAME:String = "Raw";
 		
 		public static const COMPRESSED_ALPHA:uint = 4;
-		public static const COMPRESSED_ALPHA_NAME:String = "CompressedAlpha";
+		public static const COMPRESSED_ALPHA_NAME:String = "Compressed Alpha";
 		
 		public static const RAW_ALPHA:uint = 5;
-		public static const RAW_ALPHA_NAME:String = "RawAlpha";
+		public static const RAW_ALPHA_NAME:String = "Raw Alpha";
 		
 		private static var textureTypeRegistry:Vector.<Class>;
 		
@@ -36,6 +36,10 @@ package com.unitzeroone.atf
 					return COMPRESSED_NAME;
 				case 3:
 					return RAW_NAME;
+				case 4:
+					return COMPRESSED_ALPHA_NAME;
+				case 5:
+					return RAW_ALPHA_NAME;
 				default:
 					return "Invalid/unknown";
 			}

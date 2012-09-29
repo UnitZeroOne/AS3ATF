@@ -20,7 +20,7 @@ package com.unitzeroone.atf
 			super(width, height);
 		}
 				
-		override internal function readOrWrite(serializer:IATFSerializer):void
+		override internal function serializeWith(serializer:IATFSerializer):void
 		{
 			//DXT1
 			dxt1Data = serializer.readOrWriteBlob(dxt1Data);
@@ -39,7 +39,7 @@ package com.unitzeroone.atf
 								
 		override public function toString():String
 		{
-			var s:String = "ATFTextureCompressed :\n";
+			var s:String = super.toString();
 			s+= byteArrayDataToString(dxt1Data,"dxt1Data");
 			s+= byteArrayDataToString(dxt1JXRData,"dxt1ImageData");
 			
@@ -50,8 +50,7 @@ package com.unitzeroone.atf
 			s+= byteArrayDataToString(etc1DataA,"etc1DataA");
 			s+= byteArrayDataToString(etc1DataB,"etc1DataB");
 			s+= byteArrayDataToString(etc1JXRData,"etc1JXRData");
-			
-			s+=super.toString();
+						
 			return s;
 		}	
 	}

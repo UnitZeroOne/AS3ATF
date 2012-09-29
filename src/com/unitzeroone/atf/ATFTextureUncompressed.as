@@ -14,17 +14,15 @@ package com.unitzeroone.atf
 			super(width,height);
 		}
 				
-		override internal function readOrWrite(serializer:IATFSerializer):void
+		override internal function serializeWith(serializer:IATFSerializer):void
 		{
 			jxrData = serializer.readOrWriteBlob(jxrData);
 		}
-		
-							
+									
 		override public function toString():String
 		{
-			var s:String = "ATFTextureUncompressed :\n";
+			var s:String = super.toString();
 			s+=byteArrayDataToString(jxrData,"jxrData");
-			s+=super.toString();
 			return s;
 		}
 	}

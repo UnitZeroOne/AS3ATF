@@ -130,7 +130,7 @@ package com.unitzeroone.atf
 			if(serializer.isReader)
 				_textures = new ATFTextureCollection(this);
 						
-			textures.readOrWrite(serializer);
+			textures.serializeWith(serializer);
 					
 			serializer.finish();
 			return this;
