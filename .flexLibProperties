@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="atf.ATFTextureCompressed"/>
+    <classEntry path="atf.ATFCountSerializer"/>
+    <classEntry path="atf.ATFTextureBase"/>
+    <classEntry path="atf.ATFTextureRawAlpha"/>
+    <classEntry path="atf.ATFTextureCompressedAlpha"/>
+    <classEntry path="atf.ATFByteArraySerializer"/>
+    <classEntry path="atf.ATFFormat"/>
+    <classEntry path="atf.ATFTextureRaw"/>
+    <classEntry path="atf.ATFContainer"/>
+    <classEntry path="atf.ATFTextureUncompressed"/>
+    <classEntry path="atf.ATFTextureCollection"/>
+    <classEntry path="atf.IATFSerializer"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
